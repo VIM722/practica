@@ -1,0 +1,152 @@
+{
+  "url": "https://tecnosoporte-pc3.onrender.com",
+  "fecha": "2026-11-14T17:20:07.026461-05:00",
+  "total": 16,
+  "correctos": 16,
+  "casos": [
+    {
+      "caso": "GET /cotizaciones/nueva",
+      "esperado": "HTTP 200",
+      "observado": "HTTP 200",
+      "cumple": true
+    },
+    {
+      "caso": "GET /servicios",
+      "esperado": "HTTP 200",
+      "observado": "HTTP 200",
+      "cumple": true
+    },
+    {
+      "caso": "GET /ayuda",
+      "esperado": "HTTP 200",
+      "observado": "HTTP 200",
+      "cumple": true
+    },
+    {
+      "caso": "GET /health",
+      "esperado": "HTTP 200",
+      "observado": "HTTP 200",
+      "cumple": true
+    },
+    {
+      "caso": "Salud de la aplicación",
+      "esperado": "UP",
+      "observado": "UP",
+      "cumple": true
+    },
+    {
+      "caso": "Caso 01",
+      "esperado": {
+        "entrada": {
+          "nombre": "Cliente de prueba",
+          "servicio": "DIAGNOSTICO",
+          "cantidad": "2",
+          "tipoCliente": "NUEVO"
+        },
+        "subtotal": "80.00",
+        "descuento": "0.00",
+        "total": "80.00"
+      },
+      "observado": {
+        "resultado-cliente": "Cliente de prueba",
+        "resultado-subtotal": "S/ 80.00",
+        "resultado-porcentaje": "0%",
+        "resultado-descuento": "− S/ 0.00",
+        "resultado-total": "S/ 80.00"
+      },
+      "cumple": true
+    },
+    {
+      "caso": "Caso 02",
+      "esperado": {
+        "entrada": {
+          "nombre": "Cliente de prueba",
+          "servicio": "MANTENIMIENTO",
+          "cantidad": "2",
+          "tipoCliente": "FRECUENTE"
+        },
+        "subtotal": "140.00",
+        "descuento": "14.00",
+        "total": "126.00"
+      },
+      "observado": {
+        "resultado-cliente": "Cliente de prueba",
+        "resultado-subtotal": "S/ 140.00",
+        "resultado-porcentaje": "10%",
+        "resultado-descuento": "− S/ 14.00",
+        "resultado-total": "S/ 126.00"
+      },
+      "cumple": true
+    },
+    {
+      "caso": "Caso 03",
+      "esperado": {
+        "entrada": {
+          "nombre": "Cliente de prueba",
+          "servicio": "INSTALACION",
+          "cantidad": "3",
+          "tipoCliente": "INSTITUCIONAL"
+        },
+        "subtotal": "150.00",
+        "descuento": "22.50",
+        "total": "127.50"
+      },
+      "observado": {
+        "resultado-cliente": "Cliente de prueba",
+        "resultado-subtotal": "S/ 150.00",
+        "resultado-porcentaje": "15%",
+        "resultado-descuento": "− S/ 22.50",
+        "resultado-total": "S/ 127.50"
+      },
+      "cumple": true
+    },
+    {
+      "caso": "Validación nombre=''",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación nombre='   '",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación cantidad='0'",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación cantidad='6'",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación cantidad='1.5'",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación cantidad='abc'",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación servicio='INVENTADO'",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    },
+    {
+      "caso": "Validación tipoCliente='VIP'",
+      "esperado": "Formulario con validación y sin total",
+      "observado": "Validación mostrada",
+      "cumple": true
+    }
+  ]
+}

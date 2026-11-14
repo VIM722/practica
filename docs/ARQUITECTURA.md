@@ -81,4 +81,4 @@ flowchart LR
     N[Navegador público HTTPS] --> J
 ```
 
-`render.yaml` y `Dockerfile` están preparados. La publicación debe acreditarse con un servicio Live, su URL real, el commit desplegado y capturas públicas. No se afirma que el despliegue esté realizado mientras esos datos no se hayan verificado.
+Aplicación publicada: [TecnoSoporte en Render](https://tecnosoporte-pc3.onrender.com/cotizaciones/nueva). La instancia superó 16 comprobaciones HTTP públicas y los casos mínimos en navegador el 14 de noviembre de 2026. Los resultados y capturas están en `docs/evidencias/`. El identificador exacto del commit desplegado debe consultarse en el panel de Render; no se deduce únicamente de la URL.

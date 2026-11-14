@@ -6,7 +6,21 @@ Repositorio del código: [VIM722/practica](https://github.com/VIM722/practica).
 
 Verificación del código publicado: [GitHub Actions completado correctamente](https://github.com/VIM722/practica/actions/runs/43644907030), commit `6594151e267e11550c22ba8aa5972411c2eee9de`. También se comprobó el wrapper Maven 3.9.9 en local: 77 pruebas correctas y 16 comprobaciones HTTP correctas sobre el servidor real.
 
-**URL pública: PENDIENTE DE DESPLIEGUE EN RENDER.** Esta entrega todavía no acredita la publicación obligatoria. Sustituir esta línea por la URL HTTPS real cuando Render confirme el estado Live y se hayan ejecutado las pruebas en esa dirección. No usar una URL supuesta ni localhost como evidencia pública.
+**Aplicación publicada:** [TecnoSoporte en Render](https://tecnosoporte-pc3.onrender.com/cotizaciones/nueva).
+
+La instancia pública superó 16 comprobaciones HTTP el 14 de noviembre de 2026. También se verificaron en el navegador los tres casos mínimos y la validación del formulario. Los resultados están en `docs/evidencias/pruebas-http-publicas.json` y las capturas públicas acompañan al informe.
+
+## Integrantes y roles
+
+| Orden | Integrante | Responsabilidad |
+| --- | --- | --- |
+| 1 | Huaranca Echevarria, Airton Denilson | Configuración de Spring Boot, estructura y modelos |
+| 2 | Diaz Trillo, Piero Alonso | Controladores GET y POST, recepción y validación de datos |
+| 3 | Palomares Santana, Maria Fernanda | Vistas HTML, diseño de interfaz e integración con Thymeleaf |
+| 4 | Mateo Chuquispuma, Victor Toribio | Strategy, estrategias concretas y cálculo de descuentos |
+| 5 | Tasayco Ronceros, Patricia Georgina | Pruebas funcionales, integración y coordinación documental |
+
+Las conclusiones individuales por rol y los componentes relacionados se encuentran en [docs/EQUIPO.md](docs/EQUIPO.md) y en el informe Word y PDF.
 
 ## Funcionalidades
 
@@ -183,10 +197,10 @@ Para comprobar por HTTP la instancia en ejecución:
 
 ```bash
 python scripts/verificar_web.py --url http://localhost:8080 --salida pruebas-locales.json
-python scripts/verificar_web.py --url https://URL-REAL-DE-RENDER --salida pruebas-publicas.json
+python scripts/verificar_web.py --url https://tecnosoporte-pc3.onrender.com --salida pruebas-publicas.json
 ```
 
-El segundo comando es un ejemplo: reemplaza `https://URL-REAL-DE-RENDER` por la dirección real. No ejecutes el verificador contra un servicio ajeno sin autorización. El script no almacena clientes ni crea registros.
+El segundo comando comprueba la instancia pública de este proyecto. El script no almacena clientes ni crea registros.
 
 Rutas: `GET /` redirige al formulario; `GET /cotizaciones/nueva` lo muestra; `POST /cotizaciones` valida y cotiza; `GET /servicios` muestra el catálogo; `GET /ayuda` explica el uso; `GET /health` confirma disponibilidad. El PDF de la cotización se obtiene con el cuadro de impresión del navegador, no con un endpoint de descarga.
 
@@ -200,7 +214,7 @@ Consulta [docs/ARQUITECTURA.md](docs/ARQUITECTURA.md). `CotizacionController` re
 - PDF: informe técnico. El DOCX se proporciona además como versión editable solicitada.
 - `README.md`: este archivo también se entrega por separado.
 
-Completar antes de presentar: universidad, número de grupo, integrantes, distribución real de aportes, conclusiones individuales, URL y capturas públicas. Las asignaciones sugeridas del informe no acreditan participación. Las evidencias locales no acreditan publicación. Se siguió el TXT adicional, que permite IA para documentación; el equipo debe revisar y comprender el código y el informe.
+Completar antes de presentar: universidad y número de grupo. Los integrantes y roles se registraron según el orden indicado por el equipo, y se incorporaron conclusiones para cada rol. La URL pública, las capturas y las pruebas corresponden a la instancia verificada en Render. Se siguió el TXT adicional, que permite IA para documentación; cada integrante debe revisar las conclusiones y comprender el código y el informe para la sustentación.
 
 ## Referencias oficiales
 
