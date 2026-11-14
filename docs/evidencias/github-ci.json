@@ -1,0 +1,11 @@
+{
+  "repositorio": "https://github.com/VIM722/practica",
+  "rama": "main",
+  "commit_implementacion": "6594151e267e11550c22ba8aa5972411c2eee9de",
+  "workflow": "Compilar y probar",
+  "url": "https://github.com/VIM722/practica/actions/runs/43644907030",
+  "estado_observado": "completed",
+  "conclusion_observada": "success",
+  "fecha_revision": "2026-11-14",
+  "nota": "Esta evidencia acredita compilación y pruebas en GitHub; no acredita despliegue de la aplicación en Render."
+}

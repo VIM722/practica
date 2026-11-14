@@ -2,7 +2,9 @@
 
 Aplicación web real de cotización de servicios técnicos desarrollada con **Java 17, Spring Boot 3.5.16, Spring MVC, Thymeleaf y Strategy**. El cálculo y la validación se ejecutan en el servidor Java. JavaScript solo mejora la vista previa y el selector de cantidad; el formulario funciona también sin JavaScript.
 
-Repositorio previsto: [VIM722/practica](https://github.com/VIM722/practica).
+Repositorio del código: [VIM722/practica](https://github.com/VIM722/practica).
+
+Verificación del código publicado: [GitHub Actions completado correctamente](https://github.com/VIM722/practica/actions/runs/43644907030), commit `6594151e267e11550c22ba8aa5972411c2eee9de`. También se comprobó el wrapper Maven 3.9.9 en local: 77 pruebas correctas y 16 comprobaciones HTTP correctas sobre el servidor real.
 
 **URL pública: PENDIENTE DE DESPLIEGUE EN RENDER.** Esta entrega todavía no acredita la publicación obligatoria. Sustituir esta línea por la URL HTTPS real cuando Render confirme el estado Live y se hayan ejecutado las pruebas en esa dirección. No usar una URL supuesta ni localhost como evidencia pública.
 

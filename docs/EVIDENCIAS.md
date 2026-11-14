@@ -13,6 +13,8 @@ Las capturas se tomaron el 14 de noviembre de 2026 en la aplicación Spring Boot
 | pruebas-calculo.xml | 50 pruebas de cálculo y contexto Strategy |
 | pruebas-web.xml | 27 pruebas de MVC, validación y Thymeleaf |
 | pruebas-http-local.json | 16 comprobaciones HTTP reales y sus resultados |
+| compilacion-wrapper.txt | Resumen real de verify con el wrapper y Maven 3.9.9 |
+| github-ci.json | Enlace y resultado correcto de GitHub Actions para el commit de implementación |
 | arquitectura-mvc.png | Diagrama de la arquitectura implementada |
 | arquitectura-strategy.png | Diagrama del contexto y sus estrategias |
 
