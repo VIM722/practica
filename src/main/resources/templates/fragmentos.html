@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="cabecera(titulo)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122126">
+  <meta name="description" content="Cotiza servicios técnicos con precios claros y descuentos según tu tipo de cliente.">
+  <title th:text="${titulo + ' · TecnoSoporte'}">TecnoSoporte</title>
+  <link rel="icon" type="image/svg+xml" th:href="@{/img/favicon.svg}">
+  <link rel="stylesheet" th:href="@{/css/app.css}">
+  <script th:src="@{/js/app.js}" defer></script>
+</head>
+<body>
+<svg th:fragment="icono(nombre)" class="icon" aria-hidden="true" focusable="false"><use th:href="@{|/img/icons.svg#${nombre}|}"></use></svg>
+<aside th:fragment="navegacion" class="sidebar">
+  <a class="brand" th:href="@{/}"><span class="brand-mark"><svg th:replace="~{fragmentos :: icono('tool')}"></svg></span><span>Tecno<span class="brand-light">Soporte</span><small>SERVICIOS TÉCNICOS</small></span></a>
+  <p class="nav-label">ESPACIO DE TRABAJO</p>
+  <nav aria-label="Navegación principal">
+    <a th:href="@{/cotizaciones/nueva}" th:classappend="${seccion == 'cotizar'} ? 'active'" th:attr="aria-current=${seccion == 'cotizar' ? 'page' : null}"><svg th:replace="~{fragmentos :: icono('file')}"></svg><span>Nueva cotización</span><span class="nav-plus">+</span></a>
+    <a th:href="@{/servicios}" th:classappend="${seccion == 'servicios'} ? 'active'" th:attr="aria-current=${seccion == 'servicios' ? 'page' : null}"><svg th:replace="~{fragmentos :: icono('grid')}"></svg><span>Servicios y tarifas</span></a>
+    <a th:href="@{/ayuda}" th:classappend="${seccion == 'ayuda'} ? 'active'" th:attr="aria-current=${seccion == 'ayuda' ? 'page' : null}"><svg th:replace="~{fragmentos :: icono('help')}"></svg><span>Cómo cotizar</span></a>
+  </nav>
+  <div class="sidebar-note"><span class="tiny-label">SOPORTE QUE DA CONFIANZA</span><p>Tu equipo en buenas manos.</p><span>Precios claros.<br>Soluciones a tu medida.</span><svg th:replace="~{fragmentos :: icono('monitor')}"></svg></div>
+  <div class="sidebar-bottom"><span class="avatar">TS</span><div>TecnoSoporte<small>Atención al cliente</small></div><span class="online-dot" title="Disponible"></span></div>
+</aside>
+<header th:fragment="barra(etiqueta)" class="topbar"><div><span class="workspace">Cotizaciones</span><span class="breadcrumb-separator">/</span><span th:text="${etiqueta}">Nueva cotización</span></div><span class="topbar-meta"><span class="online-dot"></span> Portal de servicios <span class="currency-tag">PEN · S/</span></span></header>
+<footer th:fragment="pie" class="footer"><span>© 2026 TecnoSoporte</span><span>Servicios técnicos · Precios en soles peruanos</span></footer>
+</body>
+</html>

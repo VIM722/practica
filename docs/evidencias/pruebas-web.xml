@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.tecnosoporte.controller.CotizacionWebTest" time="7.735" tests="27" errors="0" skipped="0" failures="0" flakes="0">
+  <testcase name="healthCheckParaRender" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="1.531">
+    </testcase>
+  <testcase name="escapaHtmlEnElNombreDelCliente" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.892" />
+  <testcase name="rechazaOpcionesManipuladas(String, String)[1]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.147" />
+  <testcase name="rechazaOpcionesManipuladas(String, String)[2]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.04" />
+  <testcase name="rechazaOpcionesManipuladas(String, String)[3]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.058" />
+  <testcase name="rechazaOpcionesManipuladas(String, String)[4]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.027" />
+  <testcase name="validaNombreLargo" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.028" />
+  <testcase name="validaNombreVacio(String)[1]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.025" />
+  <testcase name="validaNombreVacio(String)[2]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.027" />
+  <testcase name="sirvePaginasYRecursos(String)[1]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.035" />
+  <testcase name="sirvePaginasYRecursos(String)[2]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.033" />
+  <testcase name="sirvePaginasYRecursos(String)[3]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.064" />
+  <testcase name="sirvePaginasYRecursos(String)[4]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.011" />
+  <testcase name="sirvePaginasYRecursos(String)[5]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.012" />
+  <testcase name="casosMinimosDelEnunciado(String, String, String, String, String, String)[1]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.019" />
+  <testcase name="casosMinimosDelEnunciado(String, String, String, String, String, String)[2]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.015" />
+  <testcase name="casosMinimosDelEnunciado(String, String, String, String, String, String)[3]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.016" />
+  <testcase name="muestraFormularioDinamico" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.019" />
+  <testcase name="validaCantidadEnServidor(String)[1]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.023" />
+  <testcase name="validaCantidadEnServidor(String)[2]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.023" />
+  <testcase name="validaCantidadEnServidor(String)[3]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.022" />
+  <testcase name="validaCantidadEnServidor(String)[4]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.023" />
+  <testcase name="validaCantidadEnServidor(String)[5]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.023" />
+  <testcase name="validaCantidadEnServidor(String)[6]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.019" />
+  <testcase name="validaCantidadEnServidor(String)[7]" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.02" />
+  <testcase name="ignoraPreciosYDescuentosEnviadosPorElNavegador" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.013" />
+  <testcase name="inicioRedirigeAlFormulario" classname="pe.tecnosoporte.controller.CotizacionWebTest" time="0.013" />
+</testsuite>

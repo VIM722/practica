@@ -1,0 +1,2 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"><head th:replace="~{fragmentos :: cabecera('No pudimos abrir esta página')}"></head><body class="error-page"><main><span class="brand-mark"><svg th:replace="~{fragmentos :: icono('tool')}"></svg></span><p class="eyebrow" th:text="${status != null ? 'ERROR ' + status : 'OCURRIÓ UN PROBLEMA'}"></p><h1>No pudimos abrir esta página.</h1><p>Vuelve al cotizador para continuar con tu solicitud.</p><a class="button primary" th:href="@{/cotizaciones/nueva}">Ir al cotizador</a></main></body></html>

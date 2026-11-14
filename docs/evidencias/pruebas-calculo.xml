@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.tecnosoporte.service.CotizacionServiceTest" time="0.261" tests="50" errors="0" skipped="0" failures="0" flakes="0">
+  <testcase name="rechazaConfiguracionSinEstrategiaParaUnTipo" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.106" />
+  <testcase name="redondeaDescuentosAMonedasDeDosDecimales" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.007" />
+  <testcase name="rechazaTipoNulo" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="rechazaEstrategiasDuplicadas" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.003" />
+  <testcase name="laPoliticaSeIntercambiaSinModificarElServicio" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.004" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[1]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.011" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[2]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[3]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[4]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[5]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[6]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[7]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[8]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[9]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[10]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.0" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[11]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[12]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[13]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[14]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[15]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[16]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[17]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[18]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[19]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[20]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[21]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[22]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[23]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[24]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[25]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[26]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[27]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[28]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[29]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[30]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[31]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.003" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[32]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[33]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[34]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[35]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[36]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[37]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.0" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[38]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[39]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[40]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.002" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[41]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[42]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[43]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[44]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+  <testcase name="calculaLas45Combinaciones(ServicioTecnico, TipoCliente, int)[45]" classname="pe.tecnosoporte.service.CotizacionServiceTest" time="0.001" />
+</testsuite>

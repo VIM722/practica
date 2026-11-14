@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tecnosoporte-pc3
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: JAVA_TOOL_OPTIONS
+        value: "-XX:MaxRAMPercentage=70 -Dfile.encoding=UTF-8"

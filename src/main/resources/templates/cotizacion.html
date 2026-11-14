@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragmentos :: cabecera('Nueva cotización')}"></head>
+<body>
+<a href="#contenido" class="skip-link">Ir al contenido</a>
+<aside th:replace="~{fragmentos :: navegacion}"></aside>
+<div class="workspace-main">
+  <header th:replace="~{fragmentos :: barra('Nueva cotización')}"></header>
+  <main id="contenido" class="page">
+    <div class="page-heading"><div><span class="eyebrow">COTIZADOR DE SERVICIOS</span><h1>Una solución para tu equipo.</h1><p>Cuéntanos qué necesitas y obtén una cotización al instante.</p></div><span class="heading-badge"><svg th:replace="~{fragmentos :: icono('shield')}"></svg> Sin compromiso</span></div>
+    <div class="quote-layout">
+      <form id="cotizacion-form" class="form-panel" th:action="@{/cotizaciones}" method="post" th:object="${solicitud}" novalidate>
+        <div th:if="${#fields.hasAnyErrors()}" class="error-summary" role="alert" tabindex="-1"><strong>Revisa los datos de tu solicitud.</strong><p>Corrige los campos indicados para generar la cotización.</p></div>
+        <section class="form-section">
+          <div class="section-title"><span class="step-number">01</span><div><h2>Datos del cliente</h2><p>Personaliza tu cotización.</p></div></div>
+          <label for="nombre" class="field-label">Nombre del cliente <span aria-hidden="true">*</span></label>
+          <div class="input-with-icon"><svg th:replace="~{fragmentos :: icono('user')}"></svg><input id="nombre" th:field="*{nombre}" type="text" maxlength="100" required autocomplete="name" placeholder="Escribe el nombre o razón social" th:errorclass="invalid" th:attr="aria-invalid=${#fields.hasErrors('nombre')},aria-describedby=${#fields.hasErrors('nombre') ? 'nombre-error' : null}"></div>
+          <p class="field-error" id="nombre-error" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></p>
+          <fieldset class="client-fieldset"><legend class="field-label">Tipo de cliente <span aria-hidden="true">*</span></legend>
+            <div class="client-options"><label class="client-option" th:each="tipo : ${tiposCliente}"><input type="radio" th:field="*{tipoCliente}" th:value="${tipo}" th:attr="data-discount=${porcentajes[tipo.name()]}" required><span class="client-option-title" th:text="${tipo.nombre}"></span><span class="discount-tag" th:text="${porcentajes[tipo.name()] + '% dto.'}"></span></label></div>
+            <p class="field-error" th:if="${#fields.hasErrors('tipoCliente')}" th:errors="*{tipoCliente}"></p>
+          </fieldset>
+        </section>
+        <section class="form-section service-section">
+          <div class="section-title"><span class="step-number">02</span><div><h2>Elige tu servicio</h2><p>Selecciona la atención que necesita tu equipo.</p></div></div>
+          <fieldset><legend class="sr-only">Servicio técnico obligatorio</legend><div class="service-options">
+            <label class="service-option" th:each="servicio : ${servicios}"><input class="sr-only" type="radio" th:field="*{servicio}" th:value="${servicio}" th:attr="data-price=${servicio.precio},data-name=${servicio.nombre}" required><span class="service-icon"><svg th:replace="~{fragmentos :: icono(${servicio.icono})}"></svg></span><span class="service-copy"><strong th:text="${servicio.nombre}"></strong><small th:text="${servicio.descripcion}"></small></span><span class="service-price"><strong th:text="${'S/ ' + servicio.precio}"></strong><small>por unidad</small></span><span class="radio-mark"></span></label>
+          </div><p class="field-error" th:if="${#fields.hasErrors('servicio')}" th:errors="*{servicio}"></p></fieldset>
+          <div class="quantity-row"><div><label for="cantidad" class="field-label">Cantidad de servicios <span aria-hidden="true">*</span></label><p class="field-help" id="cantidad-help">Puedes cotizar de 1 a 5 unidades.</p></div><div class="stepper"><button type="button" data-step="-1" aria-label="Reducir cantidad">−</button><input id="cantidad" th:field="*{cantidad}" type="number" min="1" max="5" step="1" required inputmode="numeric" aria-describedby="cantidad-help cantidad-error" th:attr="aria-invalid=${#fields.hasErrors('cantidad')}"><button type="button" data-step="1" aria-label="Aumentar cantidad">+</button></div></div>
+          <p class="field-error" id="cantidad-error" th:if="${#fields.hasErrors('cantidad')}" th:errors="*{cantidad}"></p>
+        </section>
+        <div class="form-actions"><span><svg th:replace="~{fragmentos :: icono('lock')}"></svg> Tus datos se usan solo para esta cotización.</span><button class="button primary" type="submit">Generar cotización <svg th:replace="~{fragmentos :: icono('arrow')}"></svg></button></div>
+      </form>
+      <aside class="quote-aside" aria-label="Vista previa de cotización">
+        <div class="preview-card"><div class="preview-heading"><span class="preview-icon"><svg th:replace="~{fragmentos :: icono('file')}"></svg></span><span>Tu cotización<small>VISTA PREVIA</small></span></div><div class="preview-service"><span class="tiny-label">SERVICIO SELECCIONADO</span><p id="preview-service">Selecciona un servicio</p><span id="preview-quantity">1 unidad</span></div><dl class="price-breakdown"><div><dt>Precio unitario</dt><dd id="preview-unit">S/ —</dd></div><div><dt>Subtotal</dt><dd id="preview-subtotal">S/ —</dd></div><div class="discount-line"><dt>Descuento <span id="preview-rate">0%</span></dt><dd id="preview-discount">S/ —</dd></div></dl><div class="preview-total"><span>Total estimado<small>En soles peruanos</small></span><strong id="preview-total" aria-live="polite">S/ —</strong></div><p class="preview-note"><svg th:replace="~{fragmentos :: icono('info')}"></svg> El importe final se confirma al generar tu cotización.</p><noscript><p class="preview-note">Completa y envía el formulario para conocer tu total.</p></noscript></div>
+        <div class="benefit-note"><span class="benefit-icon"><svg th:replace="~{fragmentos :: icono('spark')}"></svg></span><div><strong>Volver tiene sus beneficios</strong><p>Clientes frecuentes ahorran 10% e institucionales, 15%.</p></div></div>
+        <div class="assurance"><span><svg th:replace="~{fragmentos :: icono('check')}"></svg> Cálculo inmediato</span><span><svg th:replace="~{fragmentos :: icono('check')}"></svg> Sin cargos adicionales</span></div>
+      </aside>
+    </div>
+    <footer th:replace="~{fragmentos :: pie}"></footer>
+  </main>
+</div>
+</body></html>

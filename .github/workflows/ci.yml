@@ -1,0 +1,30 @@
+name: Compilar y probar
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Verificar el proyecto
+        run: chmod +x mvnw && ./mvnw -B -ntp verify
+      - name: Conservar informes de pruebas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultados-pruebas
+          path: target/surefire-reports/
+      - name: Conservar aplicación ejecutable
+        uses: actions/upload-artifact@v4
+        with:
+          name: tecnosoporte-jar
+          path: target/tecno-soporte.jar
